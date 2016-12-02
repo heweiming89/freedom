@@ -9,5 +9,14 @@
     </parent>
 
     <artifactId>freedom-test</artifactId>
-    
+
+    <dependencies>
+        <!-- jUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>
