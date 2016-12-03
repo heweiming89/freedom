@@ -62,10 +62,10 @@
                 <property name="objectMapper">
                     <bean class="com.fasterxml.jackson.databind.ObjectMapper">
                         <property name="dateFormat" ref="dateFormat" />
-                        <property name="serializationInclusion">
-                            <value
-                                type="com.fasterxml.jackson.annotation.JsonInclude.Include">NON_NULL</value>
-                        </property>
+                        <!-- <property name="serializationInclusion"> -->
+                        <!-- <value -->
+                        <!-- type="com.fasterxml.jackson.annotation.JsonInclude.Include">NON_NULL</value> -->
+                        <!-- </property> -->
                     </bean>
                 </property>
             </bean>

@@ -8,6 +8,15 @@ public class DataTablesResponse {
 	private Object data;
 	private String error;
 
+	public DataTablesResponse() {
+		super();
+	}
+
+	public DataTablesResponse(int draw) {
+		super();
+		this.draw = draw;
+	}
+
 	public Object getData() {
 		return data;
 	}

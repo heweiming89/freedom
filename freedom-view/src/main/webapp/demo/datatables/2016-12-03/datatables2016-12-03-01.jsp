@@ -23,7 +23,37 @@
     </div>
 </body>
 <script>
+	var editor = null;
+
     $(function() {
+
+        editor = new $.fn.dataTable.Editor({
+            ajax : "../php/staff.php",
+            table : "#example",
+            fields : [ {
+                label : "First name:",
+                name : "first_name"
+            }, {
+                label : "Last name:",
+                name : "last_name"
+            }, {
+                label : "Position:",
+                name : "position"
+            }, {
+                label : "Office:",
+                name : "office"
+            }, {
+                label : "Extension:",
+                name : "extn"
+            }, {
+                label : "Start date:",
+                name : "start_date",
+                type : 'datetime'
+            }, {
+                label : "Salary:",
+                name : "salary"
+            } ]
+        });
 
         var dataTableId = "#example";
 
