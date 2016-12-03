@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>2016-12-03 02:03:02</title>
-<%@ include file="/demo/includes/global.jspf"%>
+<%@ include file="/includes/global/global.jspf"%>
 </head>
 <body>
     <div class="container">
