@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+    <!-- <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration"> -->
+    <bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+
+        <property name="dataSource" ref="dataSource" />
+        <property name="databaseType" value="mysql"></property>
+        <!-- <property name="transactionManager" ref="transactionManager" /> -->
+
+        <!-- • databaseSchemaUpdate: 设置流程引擎启动和关闭时如何处理数据库表。 -->
+        <!-- • false（默认）：检查数据库表的版本和依赖库的版本， 如果版本不匹配就抛出异常。 -->
+        <!-- • true: 构建流程引擎时，执行检查，如果需要就执行更新。 如果表不存在，就创建。 -->
+        <!-- • create-drop: 构建流程引擎时创建数据库表， 关闭流程引擎时删除这些表。 -->
+        <property name="databaseSchemaUpdate" value="true" />
+
+        <!-- JobExecutor是管理一系列线程的组件，可以触发定时器（也包含后续的异步消息）。 在单元 -->
+        <!-- 测试场景下，很难使用多线程。因此API允许查询(ManagementService.createJobQuery)和执行job -->
+        <!-- (ManagementService.executeJob)，所以job可以在单元测试中控制。 要避免与job执行器冲突， -->
+        <!-- 可以关闭它。 -->
+        <!-- 默认，JobExecutor在流程引擎启动时就会激活。 如果不想在流程引擎启动后自动激 -->
+        <!-- 活JobExecutor，可以设置 -->
+        <property name="jobExecutorActivate" value="false" />
+
+        <property name="asyncExecutorEnabled" value="true" />
+        <property name="asyncExecutorActivate" value="true" />
+
+        <!-- <property name="mailServerHost" value="localhost" /> -->
+        <!-- <property name="mailServerPort" value="5025" /> -->
+
+    </bean>
+
+    <bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+        <property name="processEngineConfiguration" ref="processEngineConfiguration" />
+    </bean>
+
+    <bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService" />
+    <bean id="runtimeService" factory-bean="processEngine" factory-method="getRuntimeService" />
+    <bean id="taskService" factory-bean="processEngine" factory-method="getTaskService" />
+    <bean id="formService" factory-bean="processEngine" factory-method="getFormService" />
+    <bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService" />
+    <bean id="managementService" factory-bean="processEngine" factory-method="getManagementService" />
+    <bean id="identityService" factory-bean="processEngine" factory-method="getIdentityService" />
+
+</beans>

@@ -48,6 +48,23 @@
             <artifactId>quartz</artifactId>
         </dependency>
 
+        <!-- Activiti -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-engine</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-rest</artifactId>
+            <version>5.22.0</version>
+        </dependency>
+
         <!-- Apache POI -->
         <dependency>
             <groupId>org.apache.poi</groupId>

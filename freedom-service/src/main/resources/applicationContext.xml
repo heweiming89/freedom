@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-    xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
-    xmlns:task="http://www.springframework.org/schema/task"
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:task="http://www.springframework.org/schema/task"
     xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
 		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.2.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
@@ -13,18 +12,21 @@
     <context:property-placeholder location="classpath:db.properties" />
 
     <context:component-scan base-package="cn.heweiming.freedom">
-        <context:exclude-filter type="annotation"
-            expression="org.springframework.stereotype.Controller" />
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
 
     <!-- <aop:aspectj-autoproxy /> -->
+    <!-- <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"> -->
+    <!-- <property name="jndiName" value="java:comp/env/jdbc/activitiDB" /> -->
+    <!-- </bean> -->
 
-    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
-        destroy-method="close">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}" />
         <property name="url" value="${jdbc.url}" />
         <property name="username" value="${jdbc.username}" />
         <property name="password" value="${jdbc.password}" />
+        <property name="defaultAutoCommit" value="false"></property>
     </bean>
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -38,8 +40,7 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 
-    <bean id="transactionManager"
-        class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource" />
     </bean>
 
@@ -57,10 +58,8 @@
 
     <!-- <aop:config> -->
     <!-- <aop:pointcut id="transactionPointcut" -->
-    <!-- expression="execution(* cn.heweiming.ssm.service.impl.*.*(..))" 
-        /> -->
-    <!-- <aop:advisor advice-ref="transactionAdive" pointcut-ref="transactionPointcut" 
-        /> -->
+    <!-- expression="execution(* cn.heweiming.ssm.service.impl.*.*(..))" /> -->
+    <!-- <aop:advisor advice-ref="transactionAdive" pointcut-ref="transactionPointcut" /> -->
     <!-- </aop:config> -->
 
     <!-- <import resource="includes/applicationContext-shiro.xml"/> -->
