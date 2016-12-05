@@ -14,7 +14,7 @@ import com.fasterxml.jackson.databind.SerializerProvider;
  * @Date 2016-11-18 11:00:33
  *
  */
-public class UfmLongSerializer extends JsonSerializer<Long> {
+public class LongSerializer extends JsonSerializer<Long> {
 
 	@Override
 	public void serialize(Long value, JsonGenerator gen, SerializerProvider serializers)

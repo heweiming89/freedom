@@ -35,7 +35,6 @@ public enum Gender implements BaseEnum<Gender> {
         return code;
     }
 
-    @Override
     public Gender getEnumByCode(String code) {
         if (code == null || code.trim().isEmpty()) {
             return null;

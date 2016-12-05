@@ -70,8 +70,8 @@
     <!-- <session-timeout>30</session-timeout> -->
     <!-- </session-config> -->
 
-    <listener>
-        <listener-class>org.activiti.rest.servlet.WebConfigurer</listener-class>
-    </listener>
+<!--     <listener> -->
+<!--         <listener-class>org.activiti.rest.servlet.WebConfigurer</listener-class> -->
+<!--     </listener> -->
 
 </web-app>

@@ -8,6 +8,7 @@ import java.util.Random;
 import org.junit.Test;
 
 import cn.heweiming.freedom.bean.Person;
+import cn.heweiming.freedom.enums.Gender;
 import cn.heweiming.freedom.util.BeanUtils;
 
 public class BeanTest01 {
@@ -19,7 +20,19 @@ public class BeanTest01 {
 		Person person = new Person();
 		person.setAge(current);
 		person.setBirthday(new Date());
-		person.setGender("性别" + current);
+		Gender gender = null;
+        switch (current % 5) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            gender = Gender.FEMALE.getEnumByCode(String.valueOf(current % 5));
+            break;
+        default:
+            break;
+        }
+		person.setGender(gender);
 		person.setName("姓名" + current);
 		person.setNation("民族" + current);
 		person.setWeight(current);
