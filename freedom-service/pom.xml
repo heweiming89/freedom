@@ -61,8 +61,13 @@
         </dependency>
         <dependency>
             <groupId>org.activiti</groupId>
+            <artifactId>activiti-modeler</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
             <artifactId>activiti-rest</artifactId>
-            <version>5.22.0</version>
+            <version>${activiti.version}</version>
         </dependency>
 
         <!-- Apache POI -->

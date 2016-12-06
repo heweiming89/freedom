@@ -7,9 +7,10 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>freedom-view</module>
 		<module>freedom-webjars</module>
+		<module>freedom-common</module>
 		<module>freedom-service</module>
+		<module>freedom-view</module>
 		<module>freedom-test</module>
 		<module>freedom-demo</module>
 	</modules>
