@@ -14,6 +14,13 @@ import cn.heweiming.freedom.util.BeanUtils;
 public class BeanTest01 {
 
 	@Test
+	public void testBean(){
+//		BeanUtils.describe(bean)
+	}
+	
+	
+	
+	@Test
 	public void testMapSwitchObj() throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		Random random = new Random();
 		int current = 270;

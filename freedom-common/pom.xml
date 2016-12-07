@@ -9,4 +9,13 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
+	<dependencies>
+		<dependency>
+			<groupId>cn.heweiming.project</groupId>
+			<artifactId>freedom-webjars</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+
 </project>

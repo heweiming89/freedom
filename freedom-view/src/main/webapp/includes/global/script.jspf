@@ -8,8 +8,8 @@
 
 <script src="${ctx_path}/static/plug-ins/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script src="${ctx_path}/static/plug-ins/moment/2.17.0/moment.min.js"></script>
-<script src="${ctx_path}/static/plug-ins/moment/2.17.0/locale/zh-cn.js"></script>
+<script src="${ctx_path}/static/plug-ins/moment/2.17.1/min/moment.min.js"></script>
+<script src="${ctx_path}/static/plug-ins/moment/2.17.1/locale/zh-cn.js"></script>
 
 <script src="${ctx_path}/static/plug-ins/jszip/v3.1.3-1-g5250332/jszip.min.js"></script>
 <script src="${ctx_path}/static/plug-ins/pdfmake/pdfmake.min.js"></script>

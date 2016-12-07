@@ -10,6 +10,7 @@ import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.runtime.ProcessInstance;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +39,7 @@ public class ActivitiTest01 {
 	private ManagementService managementService;
 
 	@Test
-	@Ignore
+//	@Ignore
 	public void deployment() {
 		Deployment deployment = repositoryService.createDeployment() //
 				.addClasspathResource("helloworld.bpmn").name("helloworld").deploy();
@@ -62,9 +63,11 @@ public class ActivitiTest01 {
 	}
 
 	@Test
+//	@Ignore
 	public void startProcess() throws Exception {
 		Map<String, Object> variables = null;
-		runtimeService.startProcessInstanceByKey("myProcess", variables);
+		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess");
+		System.out.println(processInstance);
 	}
 
 }

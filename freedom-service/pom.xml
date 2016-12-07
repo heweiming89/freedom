@@ -80,11 +80,11 @@
             <artifactId>poi-ooxml</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>cn.heweiming.project</groupId>
-            <artifactId>freedom-webjars</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+		<dependency>
+			<groupId>cn.heweiming.project</groupId>
+			<artifactId>freedom-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
     </dependencies>
 
 </project>
