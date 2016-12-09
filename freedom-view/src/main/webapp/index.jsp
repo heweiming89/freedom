@@ -4058,27 +4058,28 @@
   <script src="${context_root }/static/plug-ins/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="${context_root }/static/plug-ins/js-cookie/2.1.3/src/js.cookie.js" type="text/javascript"></script>
   <script src="${context_root }/static/plug-ins/jquery-slimscroll/1.3.8/jquery.slimscroll.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/blockui/2.70/jquery.blockUI.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/bootstrap-switch/3.3.2/dist/js/bootstrap-switch.min.js" type="text/javascript"></script>
   <!-- END CORE PLUGINS -->
   <!-- BEGIN PAGE LEVEL PLUGINS -->
-  <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/moment/2.17.1/min/moment.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/moment/2.17.1/locale/zh-cn.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/bootstrap-daterangepicker/2.1.24/daterangepicker.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/morris/0.5.1/morris.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/raphael/2.2.7/raphael.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/waypoints/4.0.1/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/counterup/1.7.1/dist/countUp.min.js" type="text/javascript"></script>
+  <!--   <script src="//www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script> -->
+  <!--   <script src="//www.amcharts.com/lib/3/serial.js" type="text/javascript"></script> -->
+  <!--   <script src="//www.amcharts.com/lib/3/pie.js" type="text/javascript"></script> -->
+  <!--   <script src="//www.amcharts.com/lib/3/radar.js" type="text/javascript"></script> -->
+  <!--   <script src="//www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script> -->
+  <!--   <script src="//www.amcharts.com/lib/3/themes/patterns.js" type="text/javascript"></script> -->
+  <!--   <script src="//www.amcharts.com/lib/3/themes/chalk.js" type="text/javascript"></script> -->
+  <!--   <script src="../assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script> -->
+  <!--   <script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script> -->
+  <!--   <script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script> -->
+  <script src="${context_root }/static/plug-ins/fullcalendar/3.1.0/fullcalendar.min.js" type="text/javascript"></script>
   <script src="../assets/global/plugins/horizontal-timeline/horizontal-timeline.js" type="text/javascript"></script>
   <script src="../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
   <script src="../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
