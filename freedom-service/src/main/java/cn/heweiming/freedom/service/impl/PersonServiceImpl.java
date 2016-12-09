@@ -10,11 +10,10 @@ import org.springframework.stereotype.Service;
 import cn.heweiming.freedom.bean.Paging;
 import cn.heweiming.freedom.bean.Person;
 import cn.heweiming.freedom.enums.Gender;
-import cn.heweiming.freedom.service.BaseService;
 import cn.heweiming.freedom.service.PersonService;
 
 @Service("personService")
-public class PersonServiceImpl extends BaseService implements PersonService {
+public class PersonServiceImpl implements PersonService {
 
     @Override
     public Paging<Person> findPersonPaging(int startIndex, int pageSize) {

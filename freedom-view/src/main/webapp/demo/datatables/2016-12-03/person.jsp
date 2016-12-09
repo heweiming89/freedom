@@ -139,9 +139,9 @@
                         {
                             dom : 'Brtip',
                             fixedHeader : true,
-                            responsive : {
-                                details : {
-                                    type : 'column',
+//                             responsive : {
+//                                 details : {
+//                                     type : 'column',
                                 //                                     display : $.fn.dataTable.Responsive.display.modal({
                                 //                                         header : function(row) {
                                 //                                             var data = row.data();
@@ -162,8 +162,8 @@
 
                                 //                                         return data ? $('<table/>').append(data) : false;
                                 //                                     }
-                                }
-                            },
+//                                 }
+//                             },
                             columnDefs : [ {
                                 className : 'control',
                                 //                                 orderable: false,
@@ -351,14 +351,14 @@
                                         title : "测试数据06",
                                         data : "test6"
                                     } ]
-                        //                             ,
-                        //                             select : {
-                        //                                 style : 'os',
-                        //                                 selector : 'td:first-child',
-                        //                                 blurable : true
-                        //                             }
-                        //                             select : true
-                        // 				lengthChange : false,
+                                                    ,
+                                                    select : {
+                                                        style : 'os',
+                                                        selector : 'td:first-child',
+                                                        blurable : true
+                                                    },
+                                                    
+                        				lengthChange : false,
 
                         });
 

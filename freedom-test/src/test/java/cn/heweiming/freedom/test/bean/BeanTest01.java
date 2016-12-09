@@ -15,7 +15,7 @@ public class BeanTest01 {
 
 	@Test
 	public void testBean(){
-//		BeanUtils.describe(bean)
+		
 	}
 	
 	
@@ -23,12 +23,13 @@ public class BeanTest01 {
 	@Test
 	public void testMapSwitchObj() throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
 		Random random = new Random();
+		int genderInt = random.nextInt(5);
 		int current = 270;
 		Person person = new Person();
 		person.setAge(current);
 		person.setBirthday(new Date());
 		Gender gender = null;
-        switch (current % 5) {
+        switch (genderInt % 5) {
         case 0:
         case 1:
         case 2:
@@ -45,6 +46,7 @@ public class BeanTest01 {
 		person.setWeight(current);
 		person.setMobilePhone("手机号码" + current);
 		person.setIncome(random.nextDouble() * 1_000_000_000);
+		System.out.println(person);
 		Map<String, String> map = BeanUtils.describe(person);
 		System.out.println(map);
 		Person newPerson = new Person();

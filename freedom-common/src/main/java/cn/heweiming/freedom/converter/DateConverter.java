@@ -21,7 +21,7 @@ public class DateConverter implements Converter {
 
 	@Override
 	public <T> T convert(Class<T> type, Object value) {
-		if (type != Date.class) {
+		if (type != Date.class || value == null) {
 			return null;
 		}
 		Date date = null;
