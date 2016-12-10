@@ -4080,31 +4080,31 @@
   <!--   <script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script> -->
   <!--   <script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script> -->
   <script src="${context_root }/static/plug-ins/fullcalendar/3.1.0/fullcalendar.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/horizontal-timeline/horizontal-timeline.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-  <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+  <!--   <script src="../assets/global/plugins/horizontal-timeline/horizontal-timeline.js" type="text/javascript"></script> -->
+  <script src="${context_root }/static/plug-ins/flot/0.8.3/jquery.flot.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/flot/0.8.3/jquery.flot.resize.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/flot/0.8.3/jquery.flot.categories.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/easy-pie-chart/easy-pie-chart-2.1.6/dist/jquery.easypiechart.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/sparkline/2.1.2/dist/jquery.sparkline.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/jqvmap/1.5.1/dist/jquery.vmap.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/jqvmap/1.5.1/dist/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/jqvmap/1.5.1/dist/maps/jquery.vmap.world.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/jqvmap/1.5.1/dist/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/jqvmap/1.5.1/dist/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+  <script src="${context_root }/static/plug-ins/jqvmap/1.5.1/dist/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+  <!--   <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script> -->
   <!-- END PAGE LEVEL PLUGINS -->
   <!-- BEGIN THEME GLOBAL SCRIPTS -->
-  <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/global/scripts/app.min.js" type="text/javascript"></script>
   <!-- END THEME GLOBAL SCRIPTS -->
   <!-- BEGIN PAGE LEVEL SCRIPTS -->
-  <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
   <!-- END PAGE LEVEL SCRIPTS -->
   <!-- BEGIN THEME LAYOUT SCRIPTS -->
-  <script src="../assets/layouts/layout2/scripts/layout.min.js" type="text/javascript"></script>
-  <script src="../assets/layouts/layout2/scripts/demo.min.js" type="text/javascript"></script>
-  <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-  <script src="../assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout2/scripts/layout.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout2/scripts/demo.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
   <!-- END THEME LAYOUT SCRIPTS -->
 </body>
 
