@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.heweiming.freedom.mapper.RolePermissionsRelationMapper">
+  <resultMap id="BaseResultMap" type="cn.heweiming.freedom.model.RolePermissionsRelation">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="permissions_id" jdbcType="INTEGER" property="permissionsId" />
+    <result column="activity" jdbcType="BIT" property="activity" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="creater_id" jdbcType="INTEGER" property="creater" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="modifier_id" jdbcType="INTEGER" property="modifier" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from sys_role_permissions_relation
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.heweiming.freedom.model.RolePermissionsRelation">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into sys_role_permissions_relation (role_id, permissions_id, activity, 
+      create_time, creater_id, modify_time, 
+      modifier_id)
+    values (#{roleId,jdbcType=INTEGER}, #{permissionsId,jdbcType=INTEGER}, #{activity,jdbcType=BIT}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{creater,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, 
+      #{modifier,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.heweiming.freedom.model.RolePermissionsRelation">
+    update sys_role_permissions_relation
+    set role_id = #{roleId,jdbcType=INTEGER},
+      permissions_id = #{permissionsId,jdbcType=INTEGER},
+      activity = #{activity,jdbcType=BIT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      creater_id = #{creater,jdbcType=INTEGER},
+      modify_time = #{modifyTime,jdbcType=TIMESTAMP},
+      modifier_id = #{modifier,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, role_id, permissions_id, activity, create_time, creater_id, modify_time, 
+    modifier_id
+    from sys_role_permissions_relation
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, role_id, permissions_id, activity, create_time, creater_id, modify_time, 
+    modifier_id
+    from sys_role_permissions_relation
+  </select>
+</mapper>

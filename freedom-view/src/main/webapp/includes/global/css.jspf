@@ -3,7 +3,7 @@
 <c:set var="ctx_path" value="${pageContext.request.contextPath }"></c:set>
 
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
 <link href="${context_root }/static/plug-ins/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="${context_root }/static/plug-ins/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
 <link href="${context_root }/static/plug-ins/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -19,3 +19,4 @@
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
 <!-- END THEME GLOBAL STYLES -->
+<link href="${context_root }/includes/global/main.css" rel="stylesheet" type="text/css" />
