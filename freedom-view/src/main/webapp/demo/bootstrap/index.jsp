@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>bootstrap</title>
-<%@ include file="/includes/global/global.jspf"%>
+<%@ include file="/static/includes/global/global.jspf"%>
 </head>
 <body>
   <nav class="navbar navbar-inverse">

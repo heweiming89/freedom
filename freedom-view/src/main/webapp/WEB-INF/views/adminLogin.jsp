@@ -18,7 +18,7 @@
   content="#1 selling multi-purpose bootstrap admin theme sold in themeforest marketplace packed with angularjs, material design, rtl support with over thausands of templates and ui elements and plugins to power any type of web applications including saas and admin dashboards. Preview page of Theme #3 for "
   name="description" />
 <meta content="" name="author" />
-<%@ include file="/includes/global/css.jspf"%>
+<%@ include file="/static/includes/global/css.jspf"%>
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <link href="${context_root }/static/plug-ins/select2/4.0.3/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
 <link href="${context_root }/static/plug-ins/select2/4.0.3/dist/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -115,7 +115,7 @@
 <script src="../assets/global/plugins/excanvas.min.js"></script> 
 <script src="../assets/global/plugins/ie8.fix.min.js"></script> 
 <![endif]-->
-  <%@ include file="/includes/global/js.jspf"%>
+  <%@ include file="/static/includes/global/js.jspf"%>
   <!-- BEGIN PAGE LEVEL PLUGINS -->
   <script src="${context_root }/static/plug-ins/jquery-validation/1.15.1/dist/jquery.validate.min.js" type="text/javascript"></script>
   <script src="${context_root }/static/plug-ins/jquery-validation/1.15.1/dist/additional-methods.min.js" type="text/javascript"></script>

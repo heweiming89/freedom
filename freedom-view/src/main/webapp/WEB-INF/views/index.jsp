@@ -17,7 +17,7 @@
   content="#1 selling multi-purpose bootstrap admin theme sold in themeforest marketplace packed with angularjs, material design, rtl support with over thausands of templates and ui elements and plugins to power any type of web applications including saas and admin dashboards. Preview page of Theme #3 for dashboard & statistics"
   name="description" />
 <meta content="" name="author" />
-<%@ include file="/includes/global/css.jspf"%>
+<%@ include file="/static/includes/global/css.jspf"%>
 <!-- BEGIN THEME LAYOUT STYLES -->
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
@@ -1348,7 +1348,7 @@
   <div class="quick-nav-overlay"></div>
   <!-- END QUICK NAV -->
 
-  <%@ include file="/includes/global/js.jspf"%>
+  <%@ include file="/static/includes/global/js.jspf"%>
   <!-- BEGIN THEME GLOBAL SCRIPTS -->
   <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/global/scripts/app.min.js" type="text/javascript"></script>
   <!-- END THEME GLOBAL SCRIPTS -->

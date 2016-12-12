@@ -2,5 +2,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="ctx_path" value="${pageContext.request.contextPath }"></c:set>
 
-<%@ include file="/includes/global/style.jspf"%>
-<%@ include file="/includes/global/script.jspf"%>
+<%@ include file="/static/includes/global/style.jspf"%>
+<%@ include file="/static/includes/global/script.jspf"%>
