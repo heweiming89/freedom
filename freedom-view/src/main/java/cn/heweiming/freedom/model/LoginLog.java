@@ -3,10 +3,9 @@ package cn.heweiming.freedom.model;
 import java.util.Date;
 
 public class LoginLog {
-	
     private Integer id;
 
-    private User user;
+    private Integer userId;
 
     private Date loginTime;
 
@@ -28,12 +27,12 @@ public class LoginLog {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Date getLoginTime() {

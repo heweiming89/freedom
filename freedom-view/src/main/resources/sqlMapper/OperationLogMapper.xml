@@ -6,7 +6,7 @@
     <result column="operation_type" jdbcType="VARCHAR" property="operationType" />
     <result column="operation_module" jdbcType="VARCHAR" property="operationModule" />
     <result column="operation_content" jdbcType="VARCHAR" property="operationContent" />
-    <result column="user_id" jdbcType="INTEGER" property="user" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="operation_time" jdbcType="TIMESTAMP" property="operationTime" />
     <result column="operation_ip" jdbcType="VARCHAR" property="operationIp" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
@@ -23,7 +23,7 @@
       user_id, operation_time, operation_ip, 
       remark)
     values (#{operationType,jdbcType=VARCHAR}, #{operationModule,jdbcType=VARCHAR}, #{operationContent,jdbcType=VARCHAR}, 
-      #{user,jdbcType=INTEGER}, #{operationTime,jdbcType=TIMESTAMP}, #{operationIp,jdbcType=VARCHAR}, 
+      #{userId,jdbcType=INTEGER}, #{operationTime,jdbcType=TIMESTAMP}, #{operationIp,jdbcType=VARCHAR}, 
       #{remark,jdbcType=VARCHAR})
   </insert>
   <update id="updateByPrimaryKey" parameterType="cn.heweiming.freedom.model.OperationLog">
@@ -31,7 +31,7 @@
     set operation_type = #{operationType,jdbcType=VARCHAR},
       operation_module = #{operationModule,jdbcType=VARCHAR},
       operation_content = #{operationContent,jdbcType=VARCHAR},
-      user_id = #{user,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
       operation_time = #{operationTime,jdbcType=TIMESTAMP},
       operation_ip = #{operationIp,jdbcType=VARCHAR},
       remark = #{remark,jdbcType=VARCHAR}

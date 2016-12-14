@@ -4,7 +4,7 @@ public class ResponseObj {
 
 	private boolean success;
 	private String message;
-	private Object response;
+	private Object respData;
 
 	public boolean isSuccess() {
 		return success;
@@ -22,12 +22,12 @@ public class ResponseObj {
 		this.message = message;
 	}
 
-	public Object getResponse() {
-		return response;
+	public Object getRespData() {
+		return respData;
 	}
 
-	public void setResponse(Object response) {
-		this.response = response;
+	public void setRespData(Object respData) {
+		this.respData = respData;
 	}
 
 }

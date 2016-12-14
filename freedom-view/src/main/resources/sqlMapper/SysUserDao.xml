@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.heweiming.freedom.dao.SysUserDao">
+    <resultMap id="BaseRoleMap" type="cn.heweiming.freedom.model.Role">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="code" jdbcType="VARCHAR" property="code" />
+        <result column="description" jdbcType="VARCHAR" property="description" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="state" jdbcType="VARCHAR" property="state" />
+        <result column="activity" jdbcType="BIT" property="activity" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="creater_id" jdbcType="INTEGER" property="createrId" />
+        <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+        <result column="modifier_id" jdbcType="INTEGER" property="modifierId" />
+    </resultMap>
+    <resultMap id="BasePermissionsMap" type="cn.heweiming.freedom.model.Permissions">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="url" jdbcType="VARCHAR" property="url" />
+        <result column="method" jdbcType="VARCHAR" property="method" />
+        <result column="state" jdbcType="VARCHAR" property="state" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="genus_group" jdbcType="VARCHAR" property="genusGroup" />
+        <result column="description" jdbcType="VARCHAR" property="description" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="activity" jdbcType="BIT" property="activity" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="creater_id" jdbcType="INTEGER" property="createrId" />
+        <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+        <result column="modifier_id" jdbcType="INTEGER" property="modifierId" />
+    </resultMap>
+    <resultMap id="BaseMenuMap" type="cn.heweiming.freedom.model.Menu">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="permissions_id" jdbcType="INTEGER" property="permissionsId" />
+        <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="code" jdbcType="VARCHAR" property="code" />
+        <result column="icon" jdbcType="VARCHAR" property="icon" />
+        <result column="sorting" jdbcType="SMALLINT" property="sorting" />
+        <result column="description" jdbcType="VARCHAR" property="description" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="type" jdbcType="VARCHAR" property="type" />
+        <result column="state" jdbcType="VARCHAR" property="state" />
+        <result column="activity" jdbcType="BIT" property="activity" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="creater_id" jdbcType="INTEGER" property="createrId" />
+        <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+        <result column="modifier_id" jdbcType="INTEGER" property="modifierId" />
+    </resultMap>
+
+    <select id="getRolesByUserId" resultMap="BaseRoleMap">
+        SELECT
+        r.id,
+        r.`name`,
+        r.`code`,
+        r.description,
+        r.remark,
+        r.state,
+        r.activity,
+        r.create_time,
+        r.creater_id,
+        r.modify_time,
+        r.modifier_id
+        FROM
+        sys_user AS u
+        INNER JOIN sys_user_role_relation AS ur ON ur.user_id = u.id
+        INNER JOIN sys_role AS r ON ur.role_id = r.id
+        WHERE
+        u.id = #{userId}
+    </select>
+
+    <select id="getPermissionsByUserId" resultMap="BasePermissionsMap">
+        SELECT
+        p.id,
+        p.`name`,
+        p.url,
+        p.method,
+        p.state,
+        p.type,
+        p.genus_group,
+        p.description,
+        p.remark,
+        p.activity,
+        p.create_time,
+        p.creater_id,
+        p.modify_time,
+        p.modifier_id
+        FROM
+        sys_user AS u
+        INNER JOIN sys_user_role_relation AS ur ON ur.user_id = u.id
+        INNER JOIN sys_role
+        AS r ON ur.role_id = r.id
+        INNER JOIN sys_role_permissions_relation AS up ON up.role_id = r.id
+        INNER JOIN sys_permissions AS p ON up.permissions_id = p.id
+        WHERE
+        u.id = #{userId}
+    </select>
+
+    <select id="getMenuByUserId">
+
+
+
+
+    </select>
+
+</mapper>

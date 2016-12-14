@@ -25,11 +25,11 @@ public class Permissions {
 
     private Date createTime;
 
-    private User creater;
+    private Integer createrId;
 
     private Date modifyTime;
 
-    private User modifier;
+    private Integer modifierId;
 
     public Integer getId() {
         return id;
@@ -119,12 +119,12 @@ public class Permissions {
         this.createTime = createTime;
     }
 
-    public User getCreater() {
-        return creater;
+    public Integer getCreaterId() {
+        return createrId;
     }
 
-    public void setCreater(User creater) {
-        this.creater = creater;
+    public void setCreaterId(Integer createrId) {
+        this.createrId = createrId;
     }
 
     public Date getModifyTime() {
@@ -135,11 +135,11 @@ public class Permissions {
         this.modifyTime = modifyTime;
     }
 
-    public User getModifier() {
-        return modifier;
+    public Integer getModifierId() {
+        return modifierId;
     }
 
-    public void setModifier(User modifier) {
-        this.modifier = modifier;
+    public void setModifierId(Integer modifierId) {
+        this.modifierId = modifierId;
     }
 }

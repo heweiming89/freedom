@@ -18,4 +18,4 @@
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
 <!-- END THEME GLOBAL STYLES -->
-<link href="${context_root }/includes/global/main.css" rel="stylesheet" type="text/css" />
+<link href="${context_root }/static/includes/global/main.css" rel="stylesheet" type="text/css" />

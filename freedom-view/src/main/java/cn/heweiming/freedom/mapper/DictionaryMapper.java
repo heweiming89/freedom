@@ -4,7 +4,6 @@ import cn.heweiming.freedom.model.Dictionary;
 import java.util.List;
 
 public interface DictionaryMapper {
-	
     int deleteByPrimaryKey(Integer id);
 
     int insert(Dictionary record);

@@ -15,9 +15,9 @@
     <result column="state" jdbcType="VARCHAR" property="state" />
     <result column="activity" jdbcType="BIT" property="activity" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="creater_id" jdbcType="INTEGER" property="creater" />
+    <result column="creater_id" jdbcType="INTEGER" property="createrId" />
     <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
-    <result column="modifier_id" jdbcType="INTEGER" property="modifier" />
+    <result column="modifier_id" jdbcType="INTEGER" property="modifierId" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from sys_menu
@@ -37,7 +37,7 @@
       #{code,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR}, #{sorting,jdbcType=SMALLINT}, 
       #{description,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
       #{state,jdbcType=VARCHAR}, #{activity,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{creater,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, #{modifier,jdbcType=INTEGER}
+      #{createrId,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, #{modifierId,jdbcType=INTEGER}
       )
   </insert>
   <update id="updateByPrimaryKey" parameterType="cn.heweiming.freedom.model.Menu">
@@ -54,9 +54,9 @@
       state = #{state,jdbcType=VARCHAR},
       activity = #{activity,jdbcType=BIT},
       create_time = #{createTime,jdbcType=TIMESTAMP},
-      creater_id = #{creater,jdbcType=INTEGER},
+      creater_id = #{createrId,jdbcType=INTEGER},
       modify_time = #{modifyTime,jdbcType=TIMESTAMP},
-      modifier_id = #{modifier,jdbcType=INTEGER}
+      modifier_id = #{modifierId,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">

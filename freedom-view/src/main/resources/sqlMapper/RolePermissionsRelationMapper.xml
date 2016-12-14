@@ -7,9 +7,9 @@
     <result column="permissions_id" jdbcType="INTEGER" property="permissionsId" />
     <result column="activity" jdbcType="BIT" property="activity" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="creater_id" jdbcType="INTEGER" property="creater" />
+    <result column="creater_id" jdbcType="INTEGER" property="createrId" />
     <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
-    <result column="modifier_id" jdbcType="INTEGER" property="modifier" />
+    <result column="modifier_id" jdbcType="INTEGER" property="modifierId" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from sys_role_permissions_relation
@@ -23,8 +23,8 @@
       create_time, creater_id, modify_time, 
       modifier_id)
     values (#{roleId,jdbcType=INTEGER}, #{permissionsId,jdbcType=INTEGER}, #{activity,jdbcType=BIT}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{creater,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, 
-      #{modifier,jdbcType=INTEGER})
+      #{createTime,jdbcType=TIMESTAMP}, #{createrId,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, 
+      #{modifierId,jdbcType=INTEGER})
   </insert>
   <update id="updateByPrimaryKey" parameterType="cn.heweiming.freedom.model.RolePermissionsRelation">
     update sys_role_permissions_relation
@@ -32,9 +32,9 @@
       permissions_id = #{permissionsId,jdbcType=INTEGER},
       activity = #{activity,jdbcType=BIT},
       create_time = #{createTime,jdbcType=TIMESTAMP},
-      creater_id = #{creater,jdbcType=INTEGER},
+      creater_id = #{createrId,jdbcType=INTEGER},
       modify_time = #{modifyTime,jdbcType=TIMESTAMP},
-      modifier_id = #{modifier,jdbcType=INTEGER}
+      modifier_id = #{modifierId,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
