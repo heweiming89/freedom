@@ -39,7 +39,7 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="cn.heweiming.freedom.mapper,cn.heweiming.freedom.dao" />
+		<property name="basePackage" value="cn.heweiming.freedom.mapper,cn.heweiming.freedom.dao,cn.heweiming.freedom.shiro.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 

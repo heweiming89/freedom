@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.heweiming.freedom.mapper.SysSessionMapper">
+  <resultMap id="BaseResultMap" type="cn.heweiming.freedom.model.SysSession">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="context" jdbcType="VARCHAR" property="context" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_session
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="cn.heweiming.freedom.model.SysSession">
+    insert into sys_session (id, context)
+    values (#{id,jdbcType=VARCHAR}, #{context,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.heweiming.freedom.model.SysSession">
+    update sys_session
+    set context = #{context,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, context
+    from sys_session
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, context
+    from sys_session
+  </select>
+</mapper>
