@@ -13,10 +13,6 @@
 <title>Freedom</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta
-  content="#1 selling multi-purpose bootstrap admin theme sold in themeforest marketplace packed with angularjs, material design, rtl support with over thausands of templates and ui elements and plugins to power any type of web applications including saas and admin dashboards. Preview page of Theme #3 for dashboard & statistics"
-  name="description" />
-<meta content="" name="author" />
 <%@ include file="/static/includes/global/css.jspf"%>
 <!-- BEGIN THEME LAYOUT STYLES -->
 <link href="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
@@ -182,23 +178,23 @@
                       </li>
                       <li>
                         <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-                          <li><a href="#"> <span class="photo"> <img src="${context_path }/static/img/avatar.png" class="img-circle" alt="">
+                          <li><a href="#"> <span class="photo"> <img src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Lisa Wong </span> <span class="time">Just Now </span>
                             </span> <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
                           </a></li>
-                          <li><a href="#"> <span class="photo"> <img src="${context_path }/static/img/avatar.png" class="img-circle" alt="">
+                          <li><a href="#"> <span class="photo"> <img src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Richard Doe </span> <span class="time">16 mins </span>
                             </span> <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
                           </a></li>
-                          <li><a href="#"> <span class="photo"> <img src="${context_path }/static/img/avatar.png" class="img-circle" alt="">
+                          <li><a href="#"> <span class="photo"> <img src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Bob Nilson </span> <span class="time">2 hrs </span>
                             </span> <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
                           </a></li>
-                          <li><a href="#"> <span class="photo"> <img src="${context_path }/static/img/avatar.png" class="img-circle" alt="">
+                          <li><a href="#"> <span class="photo"> <img src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Lisa Wong </span> <span class="time">40 mins </span>
                             </span> <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
                           </a></li>
-                          <li><a href="#"> <span class="photo"> <img src="${context_path }/static/img/avatar.png" class="img-circle" alt="">
+                          <li><a href="#"> <span class="photo"> <img src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Richard Doe </span> <span class="time">46 mins </span>
                             </span> <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
                           </a></li>
@@ -262,12 +258,12 @@
                       </a></li>
                       <li class=" "><a href="dashboard_3.html" class="nav-link  "> <i class="icon-graph"></i> Dashboard 3 <span class="badge badge-danger">3</span> <!-- TODO -->
                       </a></li>
-                      <li class=" "><a href="https://www.hao123.com/" target="index_iframe" class="nav-link  "> <i class="icon-graph"></i> hao123 <span
+                      <li class=" "><a href="https://www.hao123.com/" class="nav-link  "> <i class="icon-graph"></i> hao123 <span
                           class="badge badge-danger">3</span> <!-- TODO -->
                       </a></li>
                     </ul></li>
-                    
-                <%@ include file="/WEB-INF/views/sys/sys_menu.jsp"%>
+                  <!-- 菜单 -->
+                  <%@ include file="/WEB-INF/views/includes/sys/sys_menu.jsp"%>
                 </ul>
               </div>
               <%--               <jsp:include page="${context_root }/sys/menu/"></jsp:include> --%>
@@ -396,13 +392,10 @@
                 <!-- END PAGE BREADCRUMBS -->
                 <!-- BEGIN PAGE CONTENT INNER -->
                 <div class="page-content-inner">
-                  <div class="mt-content-body">
+                  <div class="mt-content-body" id="index_content_body">
                     <!-- TODO 内容 -->
-
-                    <iframe id="index_iframe" name="index_iframe" src="${context_root }/admin/login" width="100%" frameborder="0" scrolling="no"></iframe>
-
-
-
+                    <div style="height:660px;"></div>
+<%--                     <iframe id="index_iframe" name="index_iframe" src="${context_root }/admin/login" width="100%" frameborder="0" scrolling="no"></iframe> --%>
                   </div>
                 </div>
                 <!-- END PAGE CONTENT INNER -->
@@ -444,13 +437,13 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-success">8</span>
-                        </div> <img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Bob Nilson</h4>
                           <div class="media-heading-sub">Project Manager</div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Nick Larson</h4>
                           <div class="media-heading-sub">Art Director</div>
@@ -458,13 +451,13 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-danger">3</span>
-                        </div> <img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Deon Hubert</h4>
                           <div class="media-heading-sub">CTO</div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Ella Wong</h4>
                           <div class="media-heading-sub">CEO</div>
@@ -475,7 +468,7 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-warning">2</span>
-                        </div> <img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Lara Kunis</h4>
                           <div class="media-heading-sub">CEO, Loop Inc</div>
@@ -485,7 +478,7 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="label label-sm label-success">new</span>
-                        </div> <img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Ernie Kyllonen</h4>
                           <div class="media-heading-sub">
@@ -493,7 +486,7 @@
                           </div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Lisa Stone</h4>
                           <div class="media-heading-sub">CTO, Keort Inc</div>
@@ -502,13 +495,13 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-success">7</span>
-                        </div> <img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Deon Portalatin</h4>
                           <div class="media-heading-sub">CFO, H&amp;D LTD</div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Irina Savikova</h4>
                           <div class="media-heading-sub">CEO, Tizda Motors Inc</div>
@@ -516,7 +509,7 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-danger">4</span>
-                        </div> <img class="media-object" src="${context_path }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Maria Gomez</h4>
                           <div class="media-heading-sub">Manager, Infomatic Inc</div>
@@ -533,63 +526,63 @@
                       </div>
                       <div class="page-quick-sidebar-chat-user-messages">
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span class="datetime">20:15</span> <span class="body"> When could
                               you send me the report ? </span>
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span class="datetime">20:15</span> <span class="body"> Its almost
                               done. I will be sending it shortly </span>
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span class="datetime">20:15</span> <span class="body"> Alright.
                               Thanks! :) </span>
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span class="datetime">20:16</span> <span class="body"> You are
                               most welcome. Sorry for the delay. </span>
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span class="datetime">20:17</span> <span class="body"> No probs.
                               Just take your time :) </span>
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span class="datetime">20:40</span> <span class="body"> Alright. I
                               just emailed it to you. </span>
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span class="datetime">20:17</span> <span class="body"> Great!
                               Thanks. Will check it right away. </span>
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span class="datetime">20:40</span> <span class="body"> Please let
                               me know if you have any comment. </span>
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_path }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span class="datetime">20:17</span> <span class="body"> Sure. I
                               will check and buzz you if anything needs to be corrected. </span>
@@ -1020,7 +1013,7 @@
   <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
   <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
   <!-- END THEME LAYOUT SCRIPTS -->
-  <script src="${context_root }/static/includes/pages/script/index.js" type="text/javascript"></script>
+  <script src="${context_root }/scripts/index.js" type="text/javascript"></script>
 </body>
 
 </html>

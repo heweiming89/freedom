@@ -8,18 +8,18 @@ import org.springframework.web.servlet.ModelAndView;
  * TODO
  * 
  * @author heweiming
- * @createtime 2016年12月17日 下午6:56:39
- * @modifytime 2016年12月17日 下午6:56:39
+ * @createtime 2016年12月17日 下午6:56:53
+ * @modifytime 2016年12月17日 下午6:56:53
  * @since
  */
 @Controller
-@RequestMapping(value = "/sys/menu")
-public class SysMenuController {
+@RequestMapping(value = "/sys/dict")
+public class SysDictController {
 
 	@RequestMapping(value = "/")
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("/sys_mgt/menu/index");
+		mav.setViewName("/sys_mgt/dict/index");
 		return mav;
 	}
 
