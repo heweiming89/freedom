@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import cn.heweiming.freedom.shiro.domain.vo.SysMenuVo;
-import cn.heweiming.freedom.shiro.model.SysOperationLog;
 import cn.heweiming.freedom.shiro.service.SysMenuService;
 
 @Controller
@@ -39,7 +38,8 @@ public class ApplicationController {
 			System.out.println(sysMenuVo.getSubMenuList().size());
 			List<SysMenuVo> subMenuList = sysMenuVo.getSubMenuList();
 			for (SysMenuVo subMenu : subMenuList) {
-				System.out.println(subMenu.getName() + "/t" + subMenu.getUrl());
+				System.out.println(subMenu);
+//				System.out.println(subMenu.getName() + "/t" + subMenu.getUrl());
 			}
 
 		}
