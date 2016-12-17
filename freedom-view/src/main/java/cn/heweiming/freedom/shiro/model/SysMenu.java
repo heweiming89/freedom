@@ -4,12 +4,12 @@ import java.util.Date;
 
 import cn.heweiming.freedom.model.BaseModel;
 
-public class SysMenu extends BaseModel{
+public class SysMenu extends BaseModel {
     private Integer id;
 
     private Integer permissionsId;
 
-    private String parentId;
+    private Integer parentId;
 
     private String name;
 
@@ -18,6 +18,10 @@ public class SysMenu extends BaseModel{
     private String icon;
 
     private Short sorting;
+
+    private String className;
+
+    private String subClassName;
 
     private String description;
 
@@ -53,11 +57,11 @@ public class SysMenu extends BaseModel{
         this.permissionsId = permissionsId;
     }
 
-    public String getParentId() {
+    public Integer getParentId() {
         return parentId;
     }
 
-    public void setParentId(String parentId) {
+    public void setParentId(Integer parentId) {
         this.parentId = parentId;
     }
 
@@ -91,6 +95,22 @@ public class SysMenu extends BaseModel{
 
     public void setSorting(Short sorting) {
         this.sorting = sorting;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public String getSubClassName() {
+        return subClassName;
+    }
+
+    public void setSubClassName(String subClassName) {
+        this.subClassName = subClassName;
     }
 
     public String getDescription() {

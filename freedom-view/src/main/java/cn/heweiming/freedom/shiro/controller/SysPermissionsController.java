@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/sys/permissions")
 public class SysPermissionsController {
 	
-	@RequestMapping(value = "/")
+	@RequestMapping(value = "")
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("/sys_mgt/permissions/index");

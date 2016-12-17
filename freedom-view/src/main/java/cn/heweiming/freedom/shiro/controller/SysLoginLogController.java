@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/sys/loginlog")
 public class SysLoginLogController {
 
-	@RequestMapping(value = "/")
+	@RequestMapping(value = "")
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("/sys_mgt/loginlog/index");

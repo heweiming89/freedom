@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/sys/mgt")
 public class SysMgtController {
 	
-	@RequestMapping(value = "/")
+	@RequestMapping(value = "")
 	public ModelAndView index() {
 		return null;
 	}

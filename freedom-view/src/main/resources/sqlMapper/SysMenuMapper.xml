@@ -4,11 +4,13 @@
   <resultMap id="BaseResultMap" type="cn.heweiming.freedom.shiro.model.SysMenu">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="permissions_id" jdbcType="INTEGER" property="permissionsId" />
-    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="code" jdbcType="VARCHAR" property="code" />
     <result column="icon" jdbcType="VARCHAR" property="icon" />
     <result column="sorting" jdbcType="SMALLINT" property="sorting" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="sub_class_name" jdbcType="VARCHAR" property="subClassName" />
     <result column="description" jdbcType="VARCHAR" property="description" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
     <result column="type" jdbcType="VARCHAR" property="type" />
@@ -29,25 +31,27 @@
     </selectKey>
     insert into sys_menu (permissions_id, parent_id, name, 
       code, icon, sorting, 
-      description, remark, type, 
-      state, activity, create_time, 
-      creater_id, modify_time, modifier_id
-      )
-    values (#{permissionsId,jdbcType=INTEGER}, #{parentId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      class_name, sub_class_name, description, 
+      remark, type, state, 
+      activity, create_time, creater_id, 
+      modify_time, modifier_id)
+    values (#{permissionsId,jdbcType=INTEGER}, #{parentId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
       #{code,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR}, #{sorting,jdbcType=SMALLINT}, 
-      #{description,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
-      #{state,jdbcType=VARCHAR}, #{activity,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{createrId,jdbcType=INTEGER}, #{modifyTime,jdbcType=TIMESTAMP}, #{modifierId,jdbcType=INTEGER}
-      )
+      #{className,jdbcType=VARCHAR}, #{subClassName,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, 
+      #{activity,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, #{createrId,jdbcType=INTEGER}, 
+      #{modifyTime,jdbcType=TIMESTAMP}, #{modifierId,jdbcType=INTEGER})
   </insert>
   <update id="updateByPrimaryKey" parameterType="cn.heweiming.freedom.shiro.model.SysMenu">
     update sys_menu
     set permissions_id = #{permissionsId,jdbcType=INTEGER},
-      parent_id = #{parentId,jdbcType=VARCHAR},
+      parent_id = #{parentId,jdbcType=INTEGER},
       name = #{name,jdbcType=VARCHAR},
       code = #{code,jdbcType=VARCHAR},
       icon = #{icon,jdbcType=VARCHAR},
       sorting = #{sorting,jdbcType=SMALLINT},
+      class_name = #{className,jdbcType=VARCHAR},
+      sub_class_name = #{subClassName,jdbcType=VARCHAR},
       description = #{description,jdbcType=VARCHAR},
       remark = #{remark,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR},
@@ -60,14 +64,16 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select id, permissions_id, parent_id, name, code, icon, sorting, description, remark, 
-    type, state, activity, create_time, creater_id, modify_time, modifier_id
+    select id, permissions_id, parent_id, name, code, icon, sorting, class_name, sub_class_name, 
+    description, remark, type, state, activity, create_time, creater_id, modify_time, 
+    modifier_id
     from sys_menu
     where id = #{id,jdbcType=INTEGER}
   </select>
   <select id="selectAll" resultMap="BaseResultMap">
-    select id, permissions_id, parent_id, name, code, icon, sorting, description, remark, 
-    type, state, activity, create_time, creater_id, modify_time, modifier_id
+    select id, permissions_id, parent_id, name, code, icon, sorting, class_name, sub_class_name, 
+    description, remark, type, state, activity, create_time, creater_id, modify_time, 
+    modifier_id
     from sys_menu
   </select>
 </mapper>

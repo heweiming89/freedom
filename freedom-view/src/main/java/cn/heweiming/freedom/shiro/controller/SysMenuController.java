@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/sys/menu")
 public class SysMenuController {
 
-	@RequestMapping(value = "/")
+	@RequestMapping(value = "")
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("/sys_mgt/menu/index");

@@ -22,6 +22,8 @@
         m.`code`,
         m.icon,
         m.sorting,
+        m.class_name,
+        m.sub_class_name,
         m.description,
         m.remark,
         m.type,
@@ -38,27 +40,24 @@
         sub.`code` AS sub_code,
         sub.icon AS sub_icon,
         sub.sorting AS sub_sorting,
-        sub.description AS
-        sub_description,
+        sub.class_name AS sub_class_name,
+        sub.sub_class_name AS sub_sub_class_name,
+        sub.description AS sub_description,
         sub.remark AS sub_remark,
         sub.type AS sub_type,
         sub.state AS sub_state,
-        sub.activity AS
-        sub_activity,
+        sub.activity AS sub_activity,
         sub.create_time AS sub_create_time,
         sub.creater_id AS sub_creater_id,
-        sub.modify_time AS
-        sub_modify_time,
+        sub.modify_time AS sub_modify_time,
         sub.modifier_id AS modifier_id,
         p.url,
         sub_p.url AS sub_url
         FROM
         sys_permissions AS p
-        RIGHT JOIN
-        sys_menu AS m ON m.permissions_id = p.id
+        RIGHT JOIN sys_menu AS m ON m.permissions_id = p.id
         LEFT JOIN sys_menu AS sub ON m.id = sub.parent_id
-        LEFT JOIN
-        sys_permissions AS sub_p ON sub.id = sub_p.id
+        LEFT JOIN sys_permissions AS sub_p ON sub.id = sub_p.id
         WHERE
         m.parent_id IS NULL
         ORDER BY

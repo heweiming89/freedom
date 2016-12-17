@@ -2,118 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31c12e60-0802-480f-8620-fbc4950c6bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/freedom_demo_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/freedom_demo_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/freedom_view_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/freedom_view_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_6_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_6_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_javax_el_api_2_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_converter_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_model_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_engine_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_image_generator_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_process_validation_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_spring_5_22_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_email_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cas_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_quartz_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasig_cas_client_cas_client_core_3_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opensymphony_quartz_quartz_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_portlet_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_2_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-common/freedom-common.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-demo/freedom-demo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-note/freedom-note.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-service/freedom-service.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-test/freedom-test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-view/freedom-view.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom-webjars/freedom-webjars.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/freedom.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysDictController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysDictController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysLoginLogController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysLoginLogController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysMenuController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysMenuController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysMgtController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysMgtController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysOpLogController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysOpLogController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysPermissionsController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysPermissionsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysRoleController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysRoleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysUserController.java" afterPath="$PROJECT_DIR$/freedom-view/src/main/java/cn/heweiming/freedom/shiro/controller/SysUserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/includes/sys/sys_menu.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/includes/sys/sys_menu.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys/sys_menu.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys/sys_menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/static/includes/global/js.jspf" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/static/includes/global/js.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/static/template/jsp.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/static/template/jsp.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/bak/admin_2.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/bak/admin_2.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/bak/admin_3.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/bak/admin_3.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/demo/activiti/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/demo/activiti/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/demo/bootstrap/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/demo/bootstrap/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/demo/datatables/2016-12-03/datatables2016-12-03-01.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/demo/datatables/2016-12-03/datatables2016-12-03-01.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/demo/datatables/2016-12-03/person.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/demo/datatables/2016-12-03/person.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/demo/modernizr/2016-12-04/modernizr01.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/temp/demo/modernizr/2016-12-04/modernizr01.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/dict/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/dict/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/loginlog/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/loginlog/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/menu/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/menu/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/oplog/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/oplog/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/permissions/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/permissions/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/role/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/role/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/user/index.jsp" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/sys_mgt/user/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js" afterPath="$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js" />
     </list>
     <ignored path="freedom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -142,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="249">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -154,12 +60,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="font_awesome.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="font_awesome.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/interface_components/font_awesome.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1260">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="e#1554#1561#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,8 +85,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js" />
         <option value="$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/interface_components/font_awesome.jsp" />
+        <option value="$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -574,15 +482,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481966989176</updated>
-      <workItem from="1481967000486" duration="2227000" />
+      <workItem from="1481967000486" duration="2254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2227000" />
+    <option name="totallyTimeSpent" value="2254000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -635,21 +543,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js">
+    <entry file="file://$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/interface_components/font_awesome.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="-1260">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1554#1561#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freedom-view/src/main/webapp/WEB-INF/views/interface_components/font_awesome.jsp">
+    <entry file="file://$PROJECT_DIR$/freedom-view/src/main/webapp/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="249">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

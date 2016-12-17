@@ -1,4 +1,4 @@
-package cn.heweiming.freedom.controller;
+package cn.heweiming.freedom.shiro.controller;
 
 import java.util.List;
 
@@ -33,15 +33,12 @@ public class ApplicationController {
 		// }
 		List<SysMenuVo> menuVos = sysMenuService.findMenuByUser(null);
 		for (SysMenuVo sysMenuVo : menuVos) {
-			System.out.println(sysMenuVo.getName());
-			System.out.println(sysMenuVo.getUrl());
-			System.out.println(sysMenuVo.getSubMenuList().size());
+			System.out.println(sysMenuVo);
+			System.out.println("###########################################");
 			List<SysMenuVo> subMenuList = sysMenuVo.getSubMenuList();
 			for (SysMenuVo subMenu : subMenuList) {
 				System.out.println(subMenu);
-//				System.out.println(subMenu.getName() + "/t" + subMenu.getUrl());
 			}
-
 		}
 		mav.addObject("menuList", menuVos);
 		return mav;
