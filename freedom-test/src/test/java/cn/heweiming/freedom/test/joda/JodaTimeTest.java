@@ -13,5 +13,11 @@ public class JodaTimeTest {
 		System.out.println(dt.withMillisOfDay(86399999));
 	}
 	
+	@Test
+	public void test02(){
+		DateTime dateTime = DateTime.now().secondOfDay().withMinimumValue();
+		System.out.println(dateTime.toDate());
+		System.out.println(DateTime.now().secondOfDay().withMaximumValue());
+	}
 	
 }

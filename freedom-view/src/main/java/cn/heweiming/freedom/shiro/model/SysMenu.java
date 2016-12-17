@@ -2,7 +2,9 @@ package cn.heweiming.freedom.shiro.model;
 
 import java.util.Date;
 
-public class SysMenu {
+import cn.heweiming.freedom.model.BaseModel;
+
+public class SysMenu extends BaseModel{
     private Integer id;
 
     private Integer permissionsId;

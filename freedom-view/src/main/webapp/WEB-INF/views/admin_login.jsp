@@ -43,7 +43,7 @@
       </div>
       <div class="col-md-6 login-container bs-reset mt-login-5-bsfix">
         <div class="login-content">
-          <h1>Metronic Admin Login</h1>
+          <h1>Freedom Admin Login</h1>
           <p>Lorem ipsum dolor sit amet, coectetuer adipiscing elit sed diam nonummy et nibh euismod aliquam erat volutpat. Lorem ipsum dolor sit amet, coectetuer adipiscing.</p>
           <form action="javascript:;" class="login-form" method="post">
             <div class="alert alert-danger display-hide">

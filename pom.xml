@@ -13,6 +13,7 @@
 		<module>freedom-view</module>
 		<module>freedom-test</module>
 		<module>freedom-demo</module>
+		<module>freedom-note</module>
 	</modules>
 
 	<properties>

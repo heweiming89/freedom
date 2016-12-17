@@ -1,8 +1,7 @@
 package cn.heweiming.freedom.shiro.mapper;
 
-import java.util.List;
-
 import cn.heweiming.freedom.shiro.model.SysUser;
+import java.util.List;
 
 public interface SysUserMapper {
     int deleteByPrimaryKey(Integer id);

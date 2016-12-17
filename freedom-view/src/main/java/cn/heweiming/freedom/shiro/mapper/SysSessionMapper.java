@@ -1,11 +1,9 @@
 package cn.heweiming.freedom.shiro.mapper;
 
+import cn.heweiming.freedom.shiro.model.SysSession;
 import java.util.List;
 
-import cn.heweiming.freedom.shiro.model.SysSession;
-
 public interface SysSessionMapper {
-	
     int deleteByPrimaryKey(String id);
 
     int insert(SysSession record);

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.heweiming.freedom.shiro.dao.SysMenuDao">
+    <resultMap type="cn.heweiming.freedom.shiro.domain.vo.SysMenuVo" id="BaseSysMenuVoMap" extends="cn.heweiming.freedom.shiro.mapper.SysMenuMapper.BaseResultMap">
+        <collection property="subMenuList" ofType="cn.heweiming.freedom.shiro.domain.vo.SysMenuVo" columnPrefix="sub_"
+            resultMap="cn.heweiming.freedom.shiro.mapper.SysMenuMapper.BaseResultMap">
+        </collection>
+    </resultMap>
+
+    <select id="findMenuByUser" resultMap="BaseSysMenuVoMap">
+        SELECT
+        m.id,
+        m.permissions_id,
+        m.parent_id,
+        m.`name`,
+        m.`code`,
+        m.icon,
+        m.sorting,
+        m.description,
+        m.remark,
+        m.type,
+        m.state,
+        m.activity,
+        m.create_time,
+        m.creater_id,
+        m.modify_time,
+        m.modifier_id,
+        sub.id AS sub_id,
+        sub.permissions_id AS sub_permissions_id,
+        sub.parent_id AS sub_parent_id,
+        sub.`name` AS sub_name,
+        sub.`code` AS sub_code,
+        sub.icon AS sub_icon,
+        sub.sorting AS sub_sorting,
+        sub.description AS sub_description,
+        sub.remark AS sub_remark,
+        sub.type AS sub_type,
+        sub.state AS sub_state,
+        sub.activity AS sub_activity,
+        sub.create_time AS sub_create_time,
+        sub.creater_id AS sub_creater_id,
+        sub.modify_time AS sub_modify_time,
+        sub.modifier_id AS modifier_id
+        FROM
+        sys_menu AS m
+        LEFT JOIN sys_menu AS sub ON m.id = sub.parent_id
+        WHERE
+        m.parent_id IS NULL
+    </select>
+
+</mapper>

@@ -1,8 +1,7 @@
 package cn.heweiming.freedom.shiro.mapper;
 
-import java.util.List;
-
 import cn.heweiming.freedom.shiro.model.SysPermissions;
+import java.util.List;
 
 public interface SysPermissionsMapper {
     int deleteByPrimaryKey(Integer id);
