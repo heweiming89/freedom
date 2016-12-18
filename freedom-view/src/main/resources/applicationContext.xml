@@ -67,7 +67,7 @@
 		/> -->
 	<!-- </aop:config> -->
 
-	<!-- <import resource="includes/applicationContext-shiro.xml"/> -->
+	<import resource="includes/applicationContext-shiro.xml"/>
 	<import resource="includes/applicationContext-activiti.xml" />
 
 </beans>

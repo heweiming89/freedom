@@ -13,17 +13,18 @@
 <title>Freedom</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
-<%@ include file="/static/includes/global/css.jspf"%>
+<%@ include file="/resources/config/resource_config.jspf"%>
+<%@ include file="/resources/config/base_css_config.jspf"%>
 <!-- BEGIN THEME LAYOUT STYLES -->
-<link href="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/css/layout.min.css"
-  rel="stylesheet" type="text/css" />
-<link href="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/css/themes/default.min.css"
-  rel="stylesheet" type="text/css" id="style_color" />
-<link href="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/css/custom.min.css"
-  rel="stylesheet" type="text/css" />
-<link href="${context_root }/style/freedom.css" rel="stylesheet" type="text/css" />
+<link href="${metronic_root }/v4.7/theme/assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
+<link href="${metronic_root }/v4.7/theme/assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet"
+  type="text/css" id="style_color" />
+<link href="${metronic_root }/v4.7/theme/assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+<link href="${global_css_root }/freedom.css" rel="stylesheet" type="text/css" />
 <!-- END THEME LAYOUT STYLES -->
-<link rel="shortcut icon" href="${context_root }/static/img/favicon.png" />
+
+<link rel="shortcut icon" href="${global_img_root }/favicon.png" />
 </head>
 <!-- END HEAD -->
 
@@ -38,7 +39,7 @@
             <div class="container">
               <!-- BEGIN LOGO -->
               <div class="page-logo">
-                <a href="${context_root }/index.jsp"> <img src="${context_root }/static/img/wow.png" alt="logo"
+                <a href="${context_root }/index.jsp"> <img src="${global_img_root }/wow.png" alt="logo"
                   class="logo-default margin-top-5">
                 </a>
               </div>
@@ -201,34 +202,34 @@
                       <li>
                         <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
                           <li><a href="#"> <span class="photo"> <img
-                                src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
+                                src="${global_img_root }/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Lisa Wong </span> <span class="time">Just
                                   Now </span>
                             </span> <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor
                                 nibh... </span>
                           </a></li>
                           <li><a href="#"> <span class="photo"> <img
-                                src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
+                                src="${global_img_root }/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Richard Doe </span> <span class="time">16
                                   mins </span>
                             </span> <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh
                                 auctor nibh... </span>
                           </a></li>
                           <li><a href="#"> <span class="photo"> <img
-                                src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
+                                src="${global_img_root }/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Bob Nilson </span> <span class="time">2
                                   hrs </span>
                             </span> <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor
                                 nibh... </span>
                           </a></li>
                           <li><a href="#"> <span class="photo"> <img
-                                src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
+                                src="${global_img_root }/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Lisa Wong </span> <span class="time">40
                                   mins </span>
                             </span> <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
                           </a></li>
                           <li><a href="#"> <span class="photo"> <img
-                                src="${context_root }/static/img/avatar.png" class="img-circle" alt="">
+                                src="${global_img_root }/avatar.png" class="img-circle" alt="">
                             </span> <span class="subject"> <span class="from"> Richard Doe </span> <span class="time">46
                                   mins </span>
                             </span> <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh
@@ -241,7 +242,7 @@
                   <!-- BEGIN USER LOGIN DROPDOWN -->
                   <li class="dropdown dropdown-user"><a href="javascript:;" class="dropdown-toggle"
                     data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <img alt=""
-                      class="img-circle" src="${context_root }/static/img/Doraemon.jpg"> <span
+                      class="img-circle" src="${global_img_root }/Doraemon.jpg"> <span
                       class="username username-hide-mobile">heweiming</span>
                   </a>
                     <ul class="dropdown-menu dropdown-menu-default">
@@ -295,8 +296,8 @@
                       class="arrow"></span>
                   </a>
                     <ul class="dropdown-menu pull-left">
-                      <li class=" active"><a href="index.html" class="nav-link  active"> <i
-                          class="icon-bar-chart"></i> Default Dashboard <span class="badge badge-success">1</span>
+                      <li class=" active"><a href="index" class="nav-link  active"> <i class="icon-bar-chart"></i>
+                          Default Dashboard <span class="badge badge-success">1</span>
                       </a></li>
                     </ul></li>
                   <!-- 菜单 -->
@@ -435,7 +436,7 @@
               <div class="container">
                 <!-- BEGIN PAGE BREADCRUMBS -->
                 <ul class="page-breadcrumb breadcrumb">
-                  <li><a href="index.html">首页</a> <i class="fa fa-circle"></i></li>
+                  <li><a href="index">首页</a> <i class="fa fa-circle"></i></li>
                   <li><span>Dashboard</span></li>
                 </ul>
                 <!-- END PAGE BREADCRUMBS -->
@@ -493,13 +494,13 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-success">8</span>
-                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${global_img_root }/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Bob Nilson</h4>
                           <div class="media-heading-sub">Project Manager</div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png"
+                      <li class="media"><img class="media-object" src="${global_img_root }/avatar.png"
                         alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Nick Larson</h4>
@@ -508,13 +509,13 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-danger">3</span>
-                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${global_img_root }/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Deon Hubert</h4>
                           <div class="media-heading-sub">CTO</div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png"
+                      <li class="media"><img class="media-object" src="${global_img_root }/avatar.png"
                         alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Ella Wong</h4>
@@ -526,7 +527,7 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-warning">2</span>
-                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${global_img_root }/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Lara Kunis</h4>
                           <div class="media-heading-sub">CEO, Loop Inc</div>
@@ -536,7 +537,7 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="label label-sm label-success">new</span>
-                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${global_img_root }/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Ernie Kyllonen</h4>
                           <div class="media-heading-sub">
@@ -544,7 +545,7 @@
                           </div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png"
+                      <li class="media"><img class="media-object" src="${global_img_root }/avatar.png"
                         alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Lisa Stone</h4>
@@ -554,13 +555,13 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-success">7</span>
-                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${global_img_root }/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Deon Portalatin</h4>
                           <div class="media-heading-sub">CFO, H&amp;D LTD</div>
                         </div>
                       </li>
-                      <li class="media"><img class="media-object" src="${context_root }/static/img/avatar.png"
+                      <li class="media"><img class="media-object" src="${global_img_root }/avatar.png"
                         alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Irina Savikova</h4>
@@ -569,7 +570,7 @@
                       <li class="media">
                         <div class="media-status">
                           <span class="badge badge-danger">4</span>
-                        </div> <img class="media-object" src="${context_root }/static/img/avatar.png" alt="...">
+                        </div> <img class="media-object" src="${global_img_root }/avatar.png" alt="...">
                         <div class="media-body">
                           <h4 class="media-heading">Maria Gomez</h4>
                           <div class="media-heading-sub">Manager, Infomatic Inc</div>
@@ -586,7 +587,7 @@
                       </div>
                       <div class="page-quick-sidebar-chat-user-messages">
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span
                               class="datetime">20:15</span> <span class="body"> When could you send me the report
@@ -594,7 +595,7 @@
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span
                               class="datetime">20:15</span> <span class="body"> Its almost done. I will be
@@ -602,14 +603,14 @@
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span
                               class="datetime">20:15</span> <span class="body"> Alright. Thanks! :) </span>
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span
                               class="datetime">20:16</span> <span class="body"> You are most welcome. Sorry for
@@ -617,7 +618,7 @@
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span
                               class="datetime">20:17</span> <span class="body"> No probs. Just take your time :)
@@ -625,7 +626,7 @@
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span
                               class="datetime">20:40</span> <span class="body"> Alright. I just emailed it to
@@ -633,7 +634,7 @@
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span
                               class="datetime">20:17</span> <span class="body"> Great! Thanks. Will check it
@@ -641,7 +642,7 @@
                           </div>
                         </div>
                         <div class="post in">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Ella Wong</a> <span
                               class="datetime">20:40</span> <span class="body"> Please let me know if you have
@@ -649,7 +650,7 @@
                           </div>
                         </div>
                         <div class="post out">
-                          <img class="avatar" alt="" src="${context_root }/static/img/avatar.png" />
+                          <img class="avatar" alt="" src="${global_img_root }/avatar.png" />
                           <div class="message">
                             <span class="arrow"></span> <a href="javascript:;" class="name">Bob Nilson</a> <span
                               class="datetime">20:17</span> <span class="body"> Sure. I will check and buzz you
@@ -1082,26 +1083,21 @@
   <div class="quick-nav-overlay"></div>
   <!-- END QUICK NAV -->
 
-  <%@ include file="/static/includes/global/js.jspf"%>
+  <%@ include file="/resources/config/base_scripts_config.jspf"%>
   <!-- BEGIN THEME GLOBAL SCRIPTS -->
-  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/global/scripts/app.min.js"
-    type="text/javascript"></script>
+  <script src="${metronic_root }/v4.7/theme/assets/global/scripts/app.min.js" type="text/javascript"></script>
   <!-- END THEME GLOBAL SCRIPTS -->
   <!-- BEGIN PAGE LEVEL SCRIPTS -->
-  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/pages/scripts/dashboard.min.js"
-    type="text/javascript"></script>
+  <script src="${metronic_root }/v4.7/theme/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
   <!-- END PAGE LEVEL SCRIPTS -->
   <!-- BEGIN THEME LAYOUT SCRIPTS -->
-  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/scripts/layout.min.js"
-    type="text/javascript"></script>
-  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/layout3/scripts/demo.min.js"
-    type="text/javascript"></script>
-  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/global/scripts/quick-sidebar.min.js"
-    type="text/javascript"></script>
-  <script src="${context_root }/static/framework/metronic/v4.7/theme/assets/layouts/global/scripts/quick-nav.min.js"
-    type="text/javascript"></script>
+  <script src="${metronic_root }/v4.7/theme/assets/layouts/layout3/scripts/layout.min.js" type="text/javascript"></script>
+  <script src="${metronic_root }/v4.7/theme/assets/layouts/layout3/scripts/demo.min.js" type="text/javascript"></script>
+  <script src="${metronic_root }/v4.7/theme/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+  <script src="${metronic_root }/v4.7/theme/assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
   <!-- END THEME LAYOUT SCRIPTS -->
-  <script src="${context_root }/scripts/index.js" type="text/javascript"></script>
+  <script src="${global_script_root }/freedom.js" type="text/javascript"></script>
+  <script src="${pages_root }/index/scripts/index.js" type="text/javascript"></script>
 </body>
 
 </html>

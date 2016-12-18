@@ -1,7 +1,6 @@
 package cn.heweiming.freedom.test.activiti;
 
 import java.util.List;
-import java.util.Map;
 
 import org.activiti.engine.identity.Group;
 import org.activiti.engine.identity.User;
@@ -11,7 +10,6 @@ import org.activiti.engine.runtime.ProcessInstance;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.junit.Test;
-import org.springframework.transaction.annotation.Transactional;
 
 public class ActivitiTest01 extends ActivitiTest {
 
@@ -78,7 +76,6 @@ public class ActivitiTest01 extends ActivitiTest {
 	@Test
 	// @Ignore
 	public void startProcess() throws Exception {
-		Map<String, Object> variables = null;
 		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess");
 		System.out.println(processInstance);
 	}

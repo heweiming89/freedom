@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+<script src="${global_plugins_root}/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="${global_plugins_root}/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="${global_plugins_root }/js-cookie/2.1.3/src/js.cookie.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/jquery-slimscroll/1.3.8/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/blockui/2.70/jquery.blockUI.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/bootstrap-switch/3.3.2/dist/js/bootstrap-switch.min.js" type="text/javascript"></script>
+
+<script src="${global_plugins_root}/moment/2.17.1/min/moment.min.js"></script>
+<script src="${global_plugins_root}/moment/2.17.1/locale/zh-cn.js"></script>
+
+<script src="${global_plugins_root }/bootstrap-daterangepicker/2.1.24/daterangepicker.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/morris/0.5.1/morris.min.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/raphael/2.2.7/raphael.min.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/waypoints/4.0.1/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="${global_plugins_root }/counterup/1.7.1/dist/countUp.min.js" type="text/javascript"></script>
+
+<script src="${global_plugins_root}/jszip/v3.1.3-1-g5250332/jszip.min.js"></script>
+<script src="${global_plugins_root}/pdfmake/pdfmake.min.js"></script>
+<script src="${global_plugins_root}/pdfmake/vfs_fonts.js"></script>
+
+<script src="${global_plugins_root}/datatables/1.10.12/media/js/jquery.dataTables.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/media/js/dataTables.bootstrap.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Scroller/js/dataTables.scroller.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Responsive/js/responsive.bootstrap4.min.js"></script>
+
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Buttons/js/buttons.bootstrap.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Buttons/js/buttons.html5.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Buttons/js/buttons.print.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Buttons/js/buttons.colVis.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Select/js/dataTables.select.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Editor/js/dataTables.editor.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/Editor/js/editor.bootstrap.min.js"></script>
+<script src="${global_plugins_root}/datatables/1.10.12/extensions/FixedHeader/js/dataTables.fixedHeader.min.js"></script>
+
+<%-- <script src="${global_plugins_root }/resources/static/plug-ins/fullcalendar/3.1.0/fullcalendar.min.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/flot/0.8.3/jquery.flot.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/flot/0.8.3/jquery.flot.resize.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/flot/0.8.3/jquery.flot.categories.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/easy-pie-chart/easy-pie-chart-2.1.6/dist/jquery.easypiechart.min.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/sparkline/2.1.2/dist/jquery.sparkline.min.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/1.5.1/dist/jquery.vmap.min.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/1.5.1/dist/maps/jquery.vmap.russia.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/1.5.1/dist/maps/jquery.vmap.world.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/1.5.1/dist/maps/jquery.vmap.europe.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/1.5.1/dist/maps/jquery.vmap.germany.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/1.5.1/dist/maps/jquery.vmap.usa.js" type="text/javascript"></script> --%>
+<%-- <script src="${global_plugins_root }/jqvmap/jquery.vmap.sampledata.js" type="text/javascript"></script> --%>

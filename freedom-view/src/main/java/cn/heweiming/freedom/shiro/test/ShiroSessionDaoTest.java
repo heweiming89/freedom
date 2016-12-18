@@ -3,12 +3,9 @@ package cn.heweiming.freedom.shiro.test;
 import java.io.Serializable;
 import java.util.Collection;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.UnknownSessionException;
 import org.apache.shiro.session.mgt.eis.AbstractSessionDAO;
-
-import com.mchange.v2.ser.SerializableUtils;
 
 import cn.heweiming.freedom.shiro.model.SysSession;
 
@@ -37,9 +34,8 @@ public class ShiroSessionDaoTest extends AbstractSessionDAO {
 		Serializable sessionId = generateSessionId(session);
 		SysSession sysSession = new SysSession();
 		sysSession.setId((String) sessionId);
-//		SerializationUtils.serialize(session);
-		String context = null;
-//		sysSession.setContext(SerializationUtils.serialize(obj));
+		// SerializationUtils.serialize(session);
+		// sysSession.setContext(SerializationUtils.serialize(obj));
 		return null;
 	}
 
